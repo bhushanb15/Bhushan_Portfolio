@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Bhushan's Portfolio</title>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+	<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="navbarstyle.css">
+    <style type="text/css">
+    	
+  @import url('https://fonts.googleapis.com/css2?family=Cinzel&display=swap');
+  *{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: serif;
+    font-size: 20px;
+  }
+  .navigation-bar{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    background: transparent;
+    backdrop-filter: blur(20px);
+    z-index: 5;
+  }
+  .mymenus{
+    font-weight: bolder;
+    color: black;
+  }
+  .mymenus:hover{
+    text-decoration: underline 2px solid royalblue;
+    color: royalblue;
+  }
+  .logo{
+    font-family: arial black;
+    font-size: 30px;
+    color: royalblue;
+  }
+  .allsections{
+    position: relative;
+    top: 80px;
+    width: 100%;
+  }
+  .section{
+    width: 100%;
+    height: 100vh;
+    border: 5px solid black;
+  }
+  .section h1{
+    text-align: center;
+    margin-top: 250px;
+  }
+  html{
+    scroll-behavior: smooth;
+  }
+  .home-section{
+    border: none;
+    width: 100%;
+    background-image: url(https://tse2.mm.bing.net/th?id=OIP.4fNBO_UDYEVxM0E5T2FyJQHaFj&pid=Api&P=0&h=220);
+    background-repeat: no-repeat;
+    background-size: 40%;
+    background-position: 90% 2%;
+  }
+  .myinfo{
+    height: 450px;
+    width: 50%;
+    margin: 10% 4%;
+  }
+  .info-home{
+    font-size: 30px;
+    font-family: elephant;
+  }
+  .myname{
+    font-size: 50px;
+  }
+  .fsjd{
+    font-family: elephant;
+    font-size: 30px;
+    color: gold;
+  }
+  .rsm{
+    height: 60px;
+    width: 120px;
+    margin: 20px 30px;
+    border: none;
+    background-color: royalblue;
+    color: white;
+    border-radius: 10px;
+    font-family: arial black;
+  }
+  .rsm:hover{
+    background-color: white;
+    color: royalblue;
+    border: 3px solid royalblue;
+    transform: scale(1.1);
+  }
+  .about-section{
+    background-color: whitesmoke;
+    border: none;
+    width: 100%;
+    height: 500px;
+    display: flex;
+    padding: 20px;
+  }
+  .aboutsect{
+    height: 500px;
+  }
+  .myimg{
+    width: 40%;
+  }
+  .cobj{
+    padding: 30px 60px;
+  }
+  .carrer{
+    text-align: justify;
+    font-size: 22px;
+    margin-top: 50px;
+    text-indent: 20%;
+    font-family: sans-serif;
+    font-weight: bolder;
+    line-height: 40px;
+  }
+  .skills-section{
+    width: 100%;
+    height: 500px;
+  }
+  .tbl{
+    width: 100%;
+    height: 450px;
+   background-color: lightgray;
+  }
+  .tbldata{
+    width: 50%;
+    height: 225px;
+  }
+  .skl{
+    text-align: center;
+    font-size: 30px;
+  }
+  .skl-logo{
+    padding: 15px;
+  }
+  
+ 
+    </style>
+    <link rel="stylesheet" type="text/css" href="navbarstyle.css">
+      <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+<body>
+      <div class="navigation-bar">
+       <nav class="navbar navbar-expand-lg navbar-light">
+  <a class="navbar-brand" href="#"><span class="logo"> Bhushan</a>
+
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item active">
+      <a class="nav-link" href="#home"><span class="mymenus">Home</span> <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#about"><span class="mymenus">About</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#skills"><span class="mymenus">Skills</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#project"><span class="mymenus">Project</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#contact"><span class="mymenus">Contact</span></a>
+      </li>
+      
+    </ul>
+    
+  </div>
+  <!-- navdiv closed hear -->
+</nav>
+</div>
+      
+      <div class="allsections">
+      	<div class="section home-section" id="home">
+      		<div class="myinfo">
+            <span class="info-home">Hello</span>
+            <br>
+            <span class="info-home">My name is</span>
+            <div class="logo myname"  data-aos="slide-right" data-aos-anchor=".other-element">Bhushan Bisen</div>
+            <div class="info-home">I'm </div>
+            <span class="fsjd">Full Stack Java Developer</span>
+            
+          </div>
+          <div>
+          <button type="button" class="rsm">RESUME</button>
+           </div>
+      	</div>
+      	<div class="section about-section" id="about">
+      		<div class="myimg aboutsect" align="center">
+            <img src="E:\Bhushan\Kerla Tour\20230709_120452.jpg" width="350px" style="margin-top: 50px; border-radius: 50%;box-shadow: 0px 0px 30px grey;height: 350px;">
+           </div>
+           <div class="cobj aboutsect">
+            <h1 align="center" class="logo">ABOUT</h1>
+            <p class="carrer">To pursue the role of Full Stack Developer at your firm which provides ample opportunities for professional growth while utilizing my strong technical background in software engineering principles & practices.</p>
+             
+           </div>
+          
+      	</div>
+      	<div class="section skills-section" id="skills">
+      		<div>
+          <table class="tbl">
+          <tr>
+            <td class="tbldata"> <h1 class="logo skl-logo">Languages</h1>
+              <p class="skl">Core java,SQL,Java Script,HTML,CSS,XML,JSON,C#</p>
+            </td>
+            <td class="tbldata "><h1 class="logo skl-logo">API'S Freamwork</h1>
+              <p class="skl">Collection,Stream,JDBC,JSP,Hibernats,Restful API,Bootstraps,React JS,Spring,</p></td>
+          </tr>  
+          <tr>
+            <td class="tbldata"> <h1 class="logo skl-logo">Tools</h1> 
+              <p class="skl">Eclips,VS Code,JIRA,Postman , Subline,</p> 
+            </td>
+            <td class="tbldata"> <h1 class="logo skl-logo">Operting System</h1>
+            <p class="skl">Windows ,Linex,Ubuntu ,IOS ,Android</p>
+             </td>
+          </tr> 
+          </table>  
+          </div>
+      	</div>
+        <div class="section project-section" id="project" align="center">
+          <h1>PROJECT SECETION</h1>
+          <div class="all-projects">
+            <div class="card-deck">
+             <div class="card" data-aos="slide-right">
+              <center><img src="https://tse3.mm.bing.net/th?id=OIP.rMIOZbm7gsD27igx3Vc_NwHaHa&pid=Api&P=0&h=220" class="card-img-top" alt="calculator"></center>
+               <div class="card-body">
+               <h5 class="card-title">CALCULATOR</h5>
+               <p class="card-text">Addition, subtraction, multiplication, and division are the fundamental operations supported by the calculator. Users can input numbers and perform these operations with ease.</p>
+               </div>
+               </div>
+               <div class="card" data-aos="slide-down">
+               <center><img src="https://tse1.mm.bing.net/th?id=OIP.IVrB9KnhNayOu_GPQ6KO_wHaHa&pid=Api&P=0&h=220" class="card-img-top" alt="weather"></center>
+               <div class="card-body">
+               <h5 class="card-title">WEATHER</h5>
+               <p class="card-text">The app displays the current weather conditions such as temperature, humidity, wind speed, and direction for the user's location or any specified location. This information is typically presented in a clear and easy-to-read format.</p>
+               
+               </div>
+              
+               <div class="card" data-aos="slide-left">
+                <center><img src="https://tse3.mm.bing.net/th?id=OIP.KCofzcHmQGr4iNRUoHuJVAHaHa&pid=Api&P=0&h=220" class="card-img-top" alt="text editor"></center>
+                <div class="card-body">
+               <h5 class="card-title">TEXT EDITOR</h5>
+               <p class="card-text">A text editor app is a software application designed to create, edit, and manipulate plain text files. These apps are essential tools for writing and editing documents, code, notes, and various types of text-based content.</p>
+              </div>
+              </div>
+              </div>
+              <div class="card" data-aos="slide-right">
+              <center><img src="https://tse4.mm.bing.net/th?id=OIP.wqEsugV3EUlYSQiIRPlQzAHaFb&pid=Api&P=0&h=220" class="card-img-top" alt="spotify"></center>
+               <div class="card-body">
+               <h5 class="card-title">SPOTIFY CLONE</h5>
+               <p class="card-text">A Spotify clone app is a software application designed to replicate the core features and functionalities of the popular music streaming service, Spotify. While it may not have access to the same vast library of songs or licensing agreements with major record labels, a Spotify clone app typically aims to provide a similar user experience and basic functionality.</p>
+               </div>
+               </div>
+               <div class="card" data-aos="slide-up">
+               <center><img src="https://tse1.mm.bing.net/th?id=OIP.FE1g7NN647ehEqGm0BAO4gHaHB&pid=Api&P=0&h=220" class="card-img-top" alt="employee"></center>
+               <div class="card-body">
+               <h5 class="card-title">EMPLOYEE MANAGEMEENT</h5>
+               <p class="card-text">An employee management app is a software application designed to streamline various aspects of managing employees within an organization. It typically provides tools and features to help HR professionals, managers, and employees efficiently handle tasks related to workforce management. </p>
+               
+               </div>
+               </div>
+               <div class="card" data-aos="slide-left">
+                <center><img src="https://tse1.mm.bing.net/th?id=OIP.trYDWowWYHIsxCT3DKnHTgAAAA&pid=Api&P=0&h=220" class="card-img-top" alt="text editor"></center>
+                <div class="card-body">
+               <h5 class="card-title">VIDIO PLAYER</h5>
+               <p class="card-text">A video player app is a software application designed to play digital video files on various devices such as smartphones, tablets, computers, and smart TVs. These apps offer features and functionalities to enhance the viewing experience and provide users with convenient options for playing, organizing, and managing their video content. </p>
+              </div>
+              </div>
+            
+          </div>
+         
+      </div>
+      	<div class="section contact-section" id="contact" align="center">
+      		<h1>CONTACT</h1>
+          <br>
+          <br>
+      		<p>
+      			<b> Phone Number: </b>9156633825
+      			             :99221918155
+                         <br>
+
+      			<b>email: </b>bbisen0@gmail.com
+            <br>
+      			<b>Address: </b>Ambegaon pune
+            <br>             
+      		</p>
+      	</div>
+      </div>
+
+
+ 
+
+
+
+
+
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init(2000);
+  </script>
+
+
+
+</body>
+</html>
